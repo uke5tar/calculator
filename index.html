@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>Calculator</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <!-- stylesheet -->
+    <link rel=stylesheet href="calculator.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <div class="body-wrapper grid-container">
+        <header><h1>A Simple Calculator</h1></header>
+        <main>
+            <div class="calculator-wrapper grid-container">
+                <div class="calculator grid-container">
+                    <div class="screen">
+                        <span id="resultSmall">0</span>
+                        <span id="result">0</span>
+                   </div>
+                   <div class="interaction grid-container">
+                      <button type="button" class="btn-num calc" data-value="7">7</button>
+                      <button type="button" class="btn-num calc" data-value="8">8</button>
+                      <button type="button" class="btn-num calc" data-value="9">9</button>
+                      <button type="button" class="btn-erase" id="allclear" data-value="Delete">AC</button>
+                      <button type="button" class="btn-erase" id="clearentry" data-value="Backspace">CE</button>
+                      <button type="button" class="btn-num calc" data-value="4">4</button>
+                      <button type="button" class="btn-num calc" data-value="5">5</button>
+                      <button type="button" class="btn-num calc" data-value="6">6</button>
+                      <button type="button" class="btn-calc calc" data-value="*">x</button>
+                      <button type="button" class="btn-calc calc" data-value="/">÷</button>
+                      <button type="button" class="btn-num calc" data-value="1">1</button>
+                      <button type="button" class="btn-num calc" data-value="2">2</button>
+                      <button type="button" class="btn-num calc" data-value="3">3</button>
+                      <button type="button" class="btn-calc calc" data-value="+">+</button>
+                      <button type="button" class="btn-calc calc" data-value="-">-</button>
+                      <button type="button" class="btn-num calc" data-value="0">0</button>
+                      <button type="button" class="btn-num calc" data-value=".">.</button>
+                      <button type="button" class="btn-result" id="calculate" data-value="Enter">=</button>
+                   </div>
+               </div>
+            </div>
+        </main>
+   </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <!-- calculator JavaScript -->
+    <script src="calculator.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script>
+        (function() {
+            'use strict'
+
+            if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+                var msViewportStyle = document.createElement('style')
+                msViewportStyle.appendChild(
+                    document.createTextNode(
+                        '@-ms-viewport{width:auto!important}'
+                    )
+                )
+                document.head.appendChild(msViewportStyle)
+            }
+
+        }())
+    </script>
+
+</body>
+</html>
